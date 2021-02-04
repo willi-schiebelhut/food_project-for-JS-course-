@@ -178,6 +178,12 @@ a {
       font-size: 22px;
       font-weight: 700; }
 
+.show {
+  display: block; }
+
+.hide {
+  display: none; }
+
 .offer {
   padding: 70px 0 100px 0;
   position: relative; }
