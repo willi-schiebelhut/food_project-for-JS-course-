@@ -114,7 +114,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   hide();
   show();
-  tabsWrapper.addEventListener('click', e => {
+  tabsWrapper.addEventListener('click', (e) => {
     const target = e.target;
 
     if (target && target.classList.contains('tabheader__item')) {
@@ -204,7 +204,18 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  setClock('.timer', deadline);
+  setClock('.timer', deadline); // redDeadline();
+  //Модальное окно
+  //1 Назначаем data-атрибуты кнопкам
+
+  const modalTrigger = document.querySelector('[data-modal]'),
+        modal = document.querySelector('.modal'),
+        modalClose = document.querySelector('[data-close]');
+  modalTrigger.addEventListener('click', () => {
+    modal.style.display = 'block';
+  }); // modalClose.addEventListener('click', () => {
+  //     moda
+  // });
 });
 
 /***/ })
